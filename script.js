@@ -41,6 +41,8 @@ function SaleFunc(num) {
       return num - 5;
     case sale === "no":
       return num - 0;
+    case sale !== "no" || "yes":
+      return (num = 0);
     default:
   }
 }
