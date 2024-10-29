@@ -1,6 +1,7 @@
 let age = prompt("Enter your age");
 let movietype = prompt("Enter movie type");
 let time = prompt("Enter time of day");
+let sale = prompt("what kind of sale do you have?");
 function TicketPrice(num) {
   switch (true) {
     case age < 10:
@@ -33,7 +34,15 @@ function TimeFunc(num) {
       break;
   }
 }
-// console.log(TicketPrice(0));
-// console.log(TypeFunc(0));
-// console.log(TimeFunc(0));
-console.log(TicketPrice(0),TypeFunc(0),TimeFunc(0));
+function SaleFunc(num) {
+  switch (true) {
+    case sale === "gegamagaria":
+      return num - 5;
+    case sale === "":
+      return num - 0;
+    default:
+      break;
+  }
+}
+let total = TicketPrice(0) + TypeFunc(0) + TimeFunc(0) + SaleFunc(0);
+console.log(total);
