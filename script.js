@@ -19,9 +19,8 @@ function TypeFunc(num) {
       return num + 5;
     case movietype === "regular":
       return num + 5;
-    case movietype !== "3Dfile" || "regular":
-      return (num = 0);
     default:
+      return (num = 0);
   }
 }
 function TimeFunc(num) {
@@ -30,9 +29,8 @@ function TimeFunc(num) {
       return num + 5;
     case time === "evening":
       return num + 5;
-    case time !== "matine" || "evening":
-      return (num = 0);
     default:
+      return (num = 0);
   }
 }
 function SaleFunc(num) {
@@ -41,10 +39,12 @@ function SaleFunc(num) {
       return num - 5;
     case sale === "no":
       return num - 0;
-    case sale !== "no" || "yes":
-      return (num = 0);
     default:
+      return (num = 0);
   }
 }
 let total = TicketPrice(0) + TypeFunc(0) + TimeFunc(0) + SaleFunc(0);
-alert(total);
+function LastMovm() {
+  alert(total + ` ლარი`);
+}
+LastMovm();
