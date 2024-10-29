@@ -11,6 +11,7 @@ function TicketPrice(num) {
     case age > 65:
       return num + 10;
     default:
+      return (num = 0);
       break;
   }
 }
@@ -21,7 +22,7 @@ function TypeFunc(num) {
     case movietype === "regular":
       return num + 5;
     default:
-      break;
+      return num === "0";
   }
 }
 function TimeFunc(num) {
@@ -31,7 +32,7 @@ function TimeFunc(num) {
     case time === "evening":
       return num + 5;
     default:
-      break;
+      return num === "0";
   }
 }
 function SaleFunc(num) {
@@ -41,8 +42,8 @@ function SaleFunc(num) {
     case sale === "":
       return num - 0;
     default:
-      break;
+      return num === "0";
   }
 }
 let total = TicketPrice(0) + TypeFunc(0) + TimeFunc(0) + SaleFunc(0);
-alert(total);
+alert(total, "ლალი");
