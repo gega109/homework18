@@ -45,4 +45,4 @@ function SaleFunc(num) {
   }
 }
 let total = TicketPrice(0) + TypeFunc(0) + TimeFunc(0) + SaleFunc(0);
-console.log(total);
+alert(total);
